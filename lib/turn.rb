@@ -1,3 +1,3 @@
 def display_board(board)
-  top_board = ["   |   |   ","   |   |   ", "   |   |   "]
+  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 end
