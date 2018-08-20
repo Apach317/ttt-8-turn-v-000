@@ -31,5 +31,3 @@ def turn(board)
     gets user_input
   end
   end
-
-end
