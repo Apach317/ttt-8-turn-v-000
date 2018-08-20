@@ -28,6 +28,6 @@ end
 
 def turn(board)
   puts "Please enter 1-9:" do
-    input_to_index(user_input)
+    return input_to_index(user_input)
   end
   end
