@@ -15,9 +15,17 @@ def move(board, index, current_player = "X")
 end
 
 def valid_move?(board, index)
-  index.between?(0,8) && !position_taken?(board, index)
+  if (board[index] == " ") || (board[index] == "")
+    return true
+  elsif (board[index] == nil)
+    return nil
+  end
 end
 
 def position_taken?(board, index)
-  board[index] != " "
+  if (board[index] == " ") || (board[index] == "") || (board[index] == nil)
+    return false
+  else (board[index] == "x") || (board[index] == "o")
+    return true
+  end
 end
