@@ -15,11 +15,11 @@ def move(board, index, current_player = "X")
 end
 
 def valid_move?(board, index)
-  if (board[index] == " ")
-    return false
+  if (board[index] == " " || board [index] == "")
+    return true
   elsif (board[index] == nil)
     return nil
-  elsif (board [index] == "")
+  elsif (board[index] == "x") || (board[index] == "o")
     return false
   end
 end
