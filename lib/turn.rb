@@ -1,3 +1,3 @@
 def display_board
-  puts board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 end
