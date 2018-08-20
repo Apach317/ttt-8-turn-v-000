@@ -6,5 +6,3 @@ def display_board(board)
   puts "-----------"
   puts "   |   |   "
 end
-
-def input_to_index(board)
