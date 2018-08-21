@@ -19,7 +19,6 @@ def valid_move?(board, position)
     if !position_taken?(board, position.to_i-1)
       true
     end
-  end
 
 def position_taken?(board, index)
   if (board[index] == " ") || (board[index] == "") || (board[index] == nil)
