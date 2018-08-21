@@ -32,6 +32,4 @@ def turn(board)
     if input == 1
       return 0
   end
-
   end
-end
