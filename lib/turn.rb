@@ -28,7 +28,5 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  if user_input = [1,9]
-    valid_move
   end
 end
