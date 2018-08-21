@@ -28,7 +28,8 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  while vaild_move?==true do
+  while vaild_move?
+    return true do
     if input == 1
       return 0
   end
