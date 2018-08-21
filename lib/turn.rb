@@ -14,9 +14,13 @@ def move(board, index, current_player = "X")
   board[index] = current_player
 end
 
-def valid_move?(board, index)
-  index(0,9) && !position_taken?(board, index)
+def valid_move?(board, position)
+  if position.to_i.between?(1,9)
+    if !position_taken?(board, position.to_i-1)
+      true
+    end
   end
+end
 
 def position_taken?(board, index)
   if (board[index] == " ") || (board[index] == "") || (board[index] == nil)
