@@ -27,8 +27,6 @@ def position_taken?(board, index)
 end
 
 def turn(board)
-  puts "Please enter 1-9:"
-  while vaild_move? == true
-    puts move
+  print "Please enter 1-9:"
+  gets input_to_index(user_input)
   end
-end
