@@ -15,7 +15,7 @@ def move(board, index, current_player = "X")
 end
 
 def valid_move?(board, index)
-  board[index] == " " && index == [0,8]
+  board[index] == " " && index == 5.between?(0,8)
 end
 
 def position_taken?(board, index)
