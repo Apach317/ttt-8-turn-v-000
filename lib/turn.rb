@@ -14,15 +14,15 @@ def move(board, index, current_player = "X")
   board[index] = current_player
 end
 
-def valid_move?(board, position)
-  if position.to_i.between?(1,9)
-    if !position_taken?(board, position.to_i-1)
-      true
-    end
+def valid_move?(board, index)
+  if (board[index] == " ") || (board[index] == "")
+    return true
+  elsif (board[index] == nil)
+    return nil
   end
 end
 
-def position_taken?(board, position)
+def position_taken?(board, index)
   if (board[index] == " ") || (board[index] == "") || (board[index] == nil)
     return false
   else (board[index] == "x") || (board[index] == "o")
@@ -33,10 +33,4 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
-  if valid_move?(board, position)
-     move(board, position, current_player="X")
-  elsif position_taken
-     return turn(board)
-  else turn(board)
   end
-end
