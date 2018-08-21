@@ -28,6 +28,6 @@ end
 
 def turn(board)
   print "Please enter 1-9:"
-  gets input_to_index(user_input)
+  gets input_to_index
   user_input = value
   end
