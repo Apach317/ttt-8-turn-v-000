@@ -28,5 +28,5 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  gets [0,9]
+  puts user_input.array
 end
