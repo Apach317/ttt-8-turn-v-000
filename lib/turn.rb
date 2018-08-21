@@ -38,7 +38,5 @@ def turn(board)
   elsif position_taken
      return turn(board)
   else turn(board)
-    
-    
   end
 end
