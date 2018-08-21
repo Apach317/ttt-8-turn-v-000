@@ -19,6 +19,8 @@ def valid_move?(board, index)
     return true
   elsif (board[index] == nil)
     return nil
+  else (board[index] == "x") || (board[index] == "o")
+    return false
   end
 end
 
