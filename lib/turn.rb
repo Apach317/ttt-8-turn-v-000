@@ -27,7 +27,7 @@ def position_taken?(board, index)
 end
 
 def turn(board)
-  user_input.to_i = a_value
+  user_input = value
   print "Please enter 1-9:"
   gets input_to_index(user_input)
   end
